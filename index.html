@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.1"/>
+  <title>HERE WE GO</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #020024;
+      color: white;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px 20px;
+      background-color: #0d0d3f;
+      font-size: 3em;
+      font-weight: bold;
+      color: #00ffff;
+      width: 100%;
+    }
+
+    .main-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 50px;
+      margin-top: 40px;
+      padding: 0 20px;
+      flex-wrap: wrap;
+    }
+
+    .side-column {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      flex-shrink: 0;
+    }
+
+    .side-column img {
+      border-radius: 25px;
+      box-shadow: 0 0 20px #0ff;
+      margin-bottom: 40px;
+    }
+
+    /* ✅ Custom size control for individual images */
+    .left-image {
+      width: 300px; /* Adjust width */
+      height: 500px; /* Adjust height */
+      object-fit: cover;
+    }
+
+    .right-image {
+      width: 300px; /* Adjust width */
+      height: 500px; /* Adjust height */
+      object-fit: cover;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 30px;
+      max-width: 1000px;
+      width: 100%;
+      place-items: center;
+    }
+
+    .gallery-item {
+      background-color: #0d0d3f;
+      padding: 15px;
+      border-radius: 16px;
+      box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+      text-align: center;
+      transition: transform 0.3s ease;
+      width: 100%;
+      max-width: 200px;
+    }
+
+    .gallery-item:hover {
+      transform: translateY(-10px);
+    }
+
+    .gallery-item img {
+      width: 160px;
+      height: 160px;
+      border-radius: 12px;
+      margin-bottom: 15px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .gallery-item h3 {
+      color: #00ffff;
+      margin-bottom: 10px;
+      font-size: 1.1em;
+    }
+
+    .gallery-item p {
+      color: #cccccc;
+      font-size: 0.9em;
+    }
+
+    @media (max-width: 768px) {
+      .main-wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+      }
+
+      .side-column {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .left-image,
+      .right-image {
+        margin: 10px;
+        width: 35%;
+        height: auto;
+        max-width: 100px;
+      }
+
+      .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>HERE WE GO</header>
+
+  <div class="main-wrapper">
+    <!-- Left Side Images -->
+    <div class="side-column">
+      <img class="left-image" src="https://i.postimg.cc/2Skk7pdW/Chat-GPT-Image-Apr-13-2025-05-24-05-AM.png" alt="Left Image 1" />
+    </div>
+
+    <!-- Gallery -->
+    <section class="gallery">
+      <div class="gallery-item">
+        <img src="https://i.postimg.cc/FFyT5wc1/rcinpower-2207.jpg" alt="Motor" />
+        <h3>RCING 2207/2750KV</h3>
+        <p>Super power motor used for 4s/2750kv 6s/2200kv</p>
+      </div>
+      <div class="gallery-item">
+        <img src="https://i.postimg.cc/HsSDHGmT/img1.jpg" alt="Frame" />
+        <h3>SPEEDYBEE FRAME</h3>
+        <p>This frame gives you the best ability to control the drone</p>
+      </div>
+      <div class="gallery-item">
+        <img src="https://i.postimg.cc/59g8mJL5/luminier-props.jpg" alt="Drone" />
+        <h3>Drone FPV View</h3>
+        <p>Capture the horizon with high-end racing drones</p>
+      </div>
+      <div class="gallery-item">
+        <img src="https://i.postimg.cc/KvQQ4L02/aifc1.jpg" alt="Flight Controller" />
+        <h3>Speedybee HD Flight Controller</h3>
+        <p>Best flight controller for HD and analog drones</p>
+      </div>
+      <div class="gallery-item">
+        <img src="https://i.postimg.cc/ncdYnxLV/speedybee-esc.jpg" alt="ESC" />
+        <h3>Speedybee 60am ESC</h3>
+        <p>Speedybee 60am bethel 32 ESC</p>
+      </div>
+      <div class="gallery-item">
+        <img src="https://i.postimg.cc/tTtWwQfj/radio-fpv.jpg" alt="Pilot" />
+        <h3>Cyber radiomaster</h3>
+        <p>Next-gen FPV pilot with AR interface and goggles</p>
+      </div>
+      <div class="gallery-item">
+        <img src="https://i.postimg.cc/qM7ybFxP/img2.jpg" alt="Antenna" />
+        <h3>Crossfire Receiver</h3>
+        <p>Durable, high-gain for clear signal</p>
+      </div>
+      <div class="gallery-item">
+        <img src="https://i.postimg.cc/wBRkWrgq/wa.jpg" alt="Goggles" />
+        <h3>FPV Goggles HD</h3>
+        <p>High-definition goggles with low latency video feed</p>
+      </div>
+      <div class="gallery-item">
+        <img src="https://i.postimg.cc/kMvvhK3b/ai-air-unit.jpg" alt="Air Unit" />
+        <h3>FPV Camera</h3>
+        <p>Ultra-clear wide-angle FPV camera for fast flight</p>
+      </div>
+      <div class="gallery-item">
+        <img src="https://i.postimg.cc/YChN9P46/gnb-lipo.jpg" alt="Battery" />
+        <h3>LiPo Battery</h3>
+        <p>High-performance LiPo battery for longer flights</p>
+      </div>
+      <div class="gallery-item">
+        <img src="https://i.postimg.cc/YChN9P46/gnb-lipo.jpg" alt="Battery" />
+        <h3>LiPo Battery</h3>
+        <p>High-performance LiPo battery for longer flights</p>
+      </div>
+      <div class="gallery-item">
+        <img src="https://i.postimg.cc/YChN9P46/gnb-lipo.jpg" alt="Battery" />
+        <h3>LiPo Battery</h3>
+        <p>High-performance LiPo battery for longer flights</p>
+      </div>
+    </section>
+
+    <!-- Right Side Images -->
+    <div class="side-column">
+      <img class="right-image" src="https://i.postimg.cc/L8t9z9Z2/output-2.png" alt="Right Image 2" />
+    </div>
+  </div>
+</body>
+</html>

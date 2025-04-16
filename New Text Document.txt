@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FPV Drone Parts Gallery</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #020024;
+      color: white;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    header {
+      text-align: center;
+      padding: 40px 20px 20px;
+      background-color: #0d0d3f;
+      font-size: 2em;
+      font-weight: bold;
+      color: #00ffff;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* ONLY 2 per row */
+      gap: 30px;
+      padding: 60px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .gallery-item {
+      background-color: #0d0d3f;
+      padding: 20px;
+      border-radius: 16px;
+      box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: transform 0.3s ease;
+    }
+    .gallery-item:hover {
+      transform: translateY(-10px);
+    }
+    .gallery-item img {
+      width: 80%;
+      max-width: 250px;
+      height: auto;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+    .gallery-item h3 {
+      color: #00ffff;
+      margin-bottom: 10px;
+    }
+    .gallery-item p {
+      color: #cccccc;
+      font-size: 0.95em;
+      text-align: center;
+    }
+
+    /* Responsive for mobile */
+    @media (max-width: 768px) {
+      .gallery {
+        grid-template-columns: 1fr; /* stack 1 per row on smaller screens */
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>FPV Drone Parts Gallery</header>
+
+  <section class="gallery">
+    <div class="gallery-item">
+      <img src="https://via.placeholder.com/400x250?text=Motor" alt="Motor">
+      <h3>RCING 2207/2750KV</h3>
+      <p>Super power motor used for 4s/2750kv 6s/2200kv</p>
+    </div>
+    <div class="gallery-item">
+      <img src="https://via.placeholder.com/400x250?text=Frame" alt="Frame">
+      <h3>SPEEDYBEE FRAME</h3>
+      <p>This frame gives you the best ability to control the drone</p>
+    </div>
+    <div class="gallery-item">
+      <img src="https://via.placeholder.com/400x250?text=Drone" alt="Drone">
+      <h3>Drone FPV View</h3>
+      <p>Capture the horizon with high-end racing drones</p>
+    </div>
+    <div class="gallery-item">
+      <img src="https://via.placeholder.com/400x250?text=Flight+Controller" alt="Flight Controller">
+      <h3>Speedybee HD Flight Controller</h3>
+      <p>Best flight controller you can use for HD drone and analog</p>
+    </div>
+    <div class="gallery-item">
+      <img src="https://via.placeholder.com/400x250?text=ESC" alt="ESC">
+      <h3>Speedybee 60am ESC</h3>
+      <p>Speedybee 60am bethel 32 ESC</p>
+    </div>
+    <div class="gallery-item">
+      <img src="https://via.placeholder.com/400x250?text=Pilot" alt="Pilot">
+      <h3>Cyber FPV Pilot</h3>
+      <p>Next-gen FPV pilot with AR interface and goggles</p>
+    </div>
+    <div class="gallery-item">
+      <img src="https://via.placeholder.com/400x250?text=Goggles" alt="Goggles">
+      <h3>HD FPV Goggles</h3>
+      <p>Crystal-clear FPV vision for immersive flight</p>
+    </div>
+    <div class="gallery-item">
+      <img src="https://via.placeholder.com/400x250?text=Camera" alt="Camera">
+      <h3>Caddx Walnut 4K</h3>
+      <p>High resolution action camera perfect for drones</p>
+    </div>
+    <div class="gallery-item">
+      <img src="https://via.placeholder.com/400x250?text=Transmitter" alt="Transmitter">
+      <h3>RadioMaster TX16S</h3>
+      <p>Advanced radio transmitter with full telemetry</p>
+    </div>
+    <div class="gallery-item">
+      <img src="https://via.placeholder.com/400x250?text=Batteries" alt="Battery">
+      <h3>Tattu 6S LiPo</h3>
+      <p>High-performance battery with long flight time</p>
+    </div>
+  </section>
+</body>
+</html>
