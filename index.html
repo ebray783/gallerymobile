@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0, minimum-scale=0.5, user-scalable=yes" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
 
 
   <title>HERE WE GO</title>
@@ -171,6 +172,29 @@ header {
     margin: 0;
   }
 }
+@media (max-width: 768px) {
+  body {
+    font-size: 14px; /* ⬅️ Was 16px, now a bit smaller */
+    line-height: 1.4;
+    padding: 10px 0 30px;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* smaller items */
+    gap: 15px;
+    padding: 0 10px;
+  }
+
+  .gallery-item img {
+    max-width: 100px; /* ⬅️ Smaller max width */
+  }
+
+  header {
+    font-size: 1.5em; /* smaller header text */
+    padding: 20px 10px;
+  }
+}
+
 
 
   </style>
