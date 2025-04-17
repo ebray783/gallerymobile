@@ -181,12 +181,28 @@ header {
     font-size: 12px; /* ⬅️ Was 16px, now a bit smaller */
     line-height: 1.4;
     padding: 10px 0 30px;
+    overflow-x: hidden;
+  }
+    .main-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    padding: 0 10px;
+  }
+
+  .side-column {
+    display: none;
   }
 
   .gallery {
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* smaller items */
     gap: 15px;
     padding: 0 10px;
+  }
+  .gallery-item {
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0, 255, 255, 0.2);
   }
 
   .gallery-item img {
