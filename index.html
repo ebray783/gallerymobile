@@ -129,6 +129,41 @@
         font-size: 0.8em;
       }
     }
+
+   /* Prevent horizontal overflow */
+body {
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+/* Make sure all elements respect border-box */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* Hide side images on mobile */
+@media (max-width: 768px) {
+  .side-column {
+    display: none;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    padding: 0 10px;
+  }
+
+  .gallery-item {
+    max-width: 100%;
+  }
+
+  .gallery-item img {
+    width: 100%;
+    height: auto;
+  }
+}
+
   </style>
 </head>
 <body>
