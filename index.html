@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0, minimum-scale=0.5, user-scalable=yes" />
+
 
   <title>HERE WE GO</title>
   <style>
@@ -98,39 +99,57 @@
       font-size: 0.9em;
     }
 
+/* Apply box-sizing globally */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* General body styling */
+body {
+  margin: 0;
+  padding: 10px 0 40px;
+  font-size: 16px;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+/* Header */
+header {
+  font-size: 2em;
+  padding: 30px 10px 15px;
+  text-align: center;
+}
+
+/* Hide side images on mobile */
 @media (max-width: 768px) {
-  body {
-    padding: 0;
-    margin: 0;
-    overflow-x: hidden;
+  .side-column {
+    display: none;
   }
 
   .main-wrapper {
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    padding: 0 10px;
+    padding: 0 15px;
     width: 100%;
-    box-sizing: border-box;
-  }
-
-  .side-column {
-    display: none; /* Hide left/right images on mobile */
   }
 
   .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    gap: 15px;
+    gap: 20px;
     width: 100%;
-    box-sizing: border-box;
-    padding: 0 5px;
+    padding: 0 10px;
   }
 
   .gallery-item {
     width: 100%;
-    max-width: 100%;
-    box-sizing: border-box;
+    padding: 12px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+    text-align: center;
   }
 
   .gallery-item img {
@@ -143,70 +162,15 @@
 
   .gallery-item h3 {
     font-size: 1em;
+    margin-bottom: 8px;
   }
 
   .gallery-item p {
-    font-size: 0.8em;
-  }
-}
-
-
-
-   /* Prevent horizontal overflow */
-body {
-  overflow-x: hidden;
-  box-sizing: border-box;
-}
-
-/* Make sure all elements respect border-box */
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-/* Hide side images on mobile */
-@media (max-width: 768px) {
-  .side-column {
-    display: none;
-  }
-
-  .gallery {
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    padding: 0 10px;
-  }
-
-  .gallery-item {
-    max-width: 100%;
-  }
-
-  .gallery-item img {
-    width: 100%;
-    height: auto;
-  }
-}
-
-   body {
-    padding-top: 20px;
-    padding-bottom: 40px;
-    font-size: 16px;
-    line-height: 1.5;
-  }
-
-  header {
-    font-size: 2em;
-    padding: 30px 10px 15px;
-  }
-
-  .gallery-item {
-    padding: 12px;
-    box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
-    border-radius: 12px;
-  }
-
-  .gallery-item p {
+    font-size: 0.85em;
     line-height: 1.4;
+    margin: 0;
   }
+}
 
 
   </style>
